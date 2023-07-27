@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+      MYSQL_ROOT_PASSWORD: pass_test
+    ports:
+      - 3306:3306
